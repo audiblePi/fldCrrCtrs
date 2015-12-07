@@ -14,7 +14,7 @@ endwhile; endif;
 		<a href="<?php echo site_url(); ?>"><img class="login-logo" src="/wp-content/themes/FloridaCareerCenters/images/default-logo2.png"></a>
 		<h1 class="logintitle"><span class="iconfa-lock"></span> Sign In <span class="subtitle">Hello! Sign in to get you started!</span></h1>
 	        <div class="loginwrapperinner">
-	            <?php the_content(); ?>
+	            <?php echo do_shortcode('[theme-my-login show_title=0]') ?>
 	        </div>
 	    </div>
 	    <div class="loginshadow animate3 fadeInUp"></div>
@@ -25,8 +25,7 @@ endwhile; endif;
 
 		jQuery(document).ready(function(){
 			jQuery('ul.tml-action-links').prepend('<li><a href="<?php echo site_url() ?>">← Back to FloridaCareerCenters.com</a></li>');
-			console.log(jQuery('.loginwrapperinner').text());
-			
+						
 			var anievent = (jQuery.browser.webkit)? 'webkitAnimationEnd' : 'animationend';
 			jQuery('.loginwrap').bind(anievent,function(){
 				jQuery(this).removeClass('animate2 bounceInDown');

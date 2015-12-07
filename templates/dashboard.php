@@ -31,7 +31,7 @@ date_default_timezone_set('EST');
         <div class="leftmenu">        
             <ul class="nav nav-tabs nav-stacked">
             	<li class="nav-header">Main Navigation</li>
-                <li id="dashboard" class="active" ><a href="dashboard.html"><span class="icon-align-justify"></span> Dashboard</a></li>
+                <li id="documents" class="active" ><a href=""><span class="icon-folder-open"></span> Documents</a></li>
                 <li id="calendar"><a href=""><span class="icon-calendar"></span> Calendar</a></li>
                 <li id="edit-profile"><a href=""><span class="icon-edit"></span>Edit Profile</a></li>
             </ul>
@@ -47,7 +47,7 @@ date_default_timezone_set('EST');
                     <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="/page.html">Hi, <?php echo $current_user->display_name ?> <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li id="edit-profile" class="script"><a href=""><span class="icon-edit"></span> Edit Profile</a></li>
-                        <li id="back-home"><a href="<?php echo site_url(); ?>"><span class="iconsweets-globe"></span> Back to Home</a></li>
+                        <li id="back-home"><a href="<?php echo site_url(); ?>"><span class="icon-home"></span> Back to Home</a></li>
                         <li class="divider"></li>
                         <li id="logout"><a href="<?php echo wp_logout_url(); ?>"><span class="icon-off"></span> Sign Out</a></li>
                     </ul>
@@ -57,19 +57,19 @@ date_default_timezone_set('EST');
         
         <div class="breadcrumbwidget">
 	    	<ul class="breadcrumb">
-	            <li><a href="dashboard.html">Home</a> <span class="divider">/</span></li>
-	            <li class="active" id="this-crumb">Dashboard</li>
+	            <li><a href="">Home</a> <span class="divider">/</span></li>
+	            <li class="active" id="this-crumb">Documents</li>
 	        </ul>
 	    </div>
 
 	  	<div class="pagetitle">
-	    	<h1>Dashboard</h1> <span>This is a sample description for dashboard page...</span>
+	    	<h1>Documents</h1>
 	    </div>
 
 		<div class="maincontent">
 	    	<div class="contentinner content-dashboard">
-		        <div class="dynamic-content-wrapper dashboard current">
-			        <?php echo do_shortcode('[fcc-dashboard]'); ?>
+		        <div class="dynamic-content-wrapper documents current">
+			        <?php echo do_shortcode('[fcc-documents]'); ?>
 		    	</div>
 		    	<div class="dynamic-content-wrapper calendar">
 			        <?php echo do_shortcode('[fcc-calendar]'); ?>
