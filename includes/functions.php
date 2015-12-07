@@ -77,6 +77,7 @@ if (!function_exists('shell_setup')):
         add_custom_image_header('', 'shell_admin_header_style');
 		
 		register_nav_menu( 'primary', __( 'Primary Menu', 'shell' ) );
+        register_nav_menu( 'admin', __( 'Admin Menu', 'shell' ) );
     }
 
 endif;

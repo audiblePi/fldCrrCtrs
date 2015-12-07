@@ -14,7 +14,7 @@
         <div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'shell' ); ?>"><?php _e( '&uarr;', 'shell' ); ?></a></div>
         
         <div class="grid col-300 fit powered">
-            <p></p>
+            <p><?php wp_nav_menu( array( 'theme_location' => 'admin') ); ?></p>
         </div><!-- end .powered -->
     </div><!-- end #footer-wrapper -->
 </div><!-- end #footer -->
