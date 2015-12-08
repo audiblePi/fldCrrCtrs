@@ -20,7 +20,7 @@ date_default_timezone_set('EST');
         <div class="datewidget">Today is <?php echo date("F j, Y, g:i a"); ?></div>
 
         <div class="searchwidget">
-        	<form action="results.html" method="post">
+        	<form action="" method="post">
             	<div class="input-append">
                     <input type="text" class="span2 search-query" placeholder="Search here...">
                     <button type="submit" class="btn"><span class="icon-search"></span></button>
@@ -31,9 +31,9 @@ date_default_timezone_set('EST');
         <div class="leftmenu">        
             <ul class="nav nav-tabs nav-stacked">
             	<li class="nav-header">Main Navigation</li>
-                <li id="documents" class="active" ><a href=""><span class="icon-folder-open"></span> Documents</a></li>
-                <li id="calendar"><a href=""><span class="icon-calendar"></span> Calendar</a></li>
-                <li id="edit-profile"><a href=""><span class="icon-edit"></span>Edit Profile</a></li>
+                <li class="nav" id="documents" class="active" ><a href=""><span class="icon-folder-open"></span> Documents</a></li>
+                <li class="nav" id="calendar"><a href=""><span class="icon-calendar"></span> Calendar</a></li>
+                <li class="nav" id="edit-profile"><a href=""><span class="icon-edit"></span>Edit Profile</a></li>
             </ul>
         </div>
     </div>
@@ -77,6 +77,9 @@ date_default_timezone_set('EST');
 		    	<div class="dynamic-content-wrapper edit-profile">
 			        <?php echo do_shortcode('[fcc-edit-profile]'); ?>
 		    	</div>
+                <div class="dynamic-content-wrapper search-results">
+                    <?php echo do_shortcode('[fcc-search-results]'); ?>
+                </div>
 		    </div>
 		  </div>
 
