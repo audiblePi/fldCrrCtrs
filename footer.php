@@ -5,15 +5,15 @@
 
 <div id="footer">
     <div id="footer-wrapper">
-        <div class="grid col-300 copyright">
+        <div class="grid col-450 copyright">
             <?php esc_attr_e('&copy;', 'shell'); ?> <?php _e(date('Y')); ?><a href="<?php echo home_url('/') ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>">
                 <?php bloginfo('name'); ?>
             </a>
         </div><!-- end of .copyright -->
         
-        <div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'shell' ); ?>"><?php _e( '&uarr;', 'shell' ); ?></a></div>
+        <!-- <div class="grid col-300 scroll-top"><a href="#scroll-top" title="<?php esc_attr_e( 'scroll to top', 'shell' ); ?>"><?php _e( '&uarr;', 'shell' ); ?></a></div> -->
         
-        <div class="grid col-300 fit powered">
+        <div class="grid col-450 fit powered" style="float:right">
             <ul class="admin-nav">
                 <?php
                     $current_user = wp_get_current_user();

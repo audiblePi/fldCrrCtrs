@@ -7,7 +7,7 @@ wp_head();
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 endwhile; endif;
 ?>
-
+<link rel="stylesheet" href="/wp-content/plugins/fcc-dashboard/css/style.default.css" type="text/css" media="all" />
 <body class="loginbody">
 	<div class="loginwrapper">
 		<div class="loginwrap zindex100 animate2 bounceInDown">

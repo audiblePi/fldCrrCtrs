@@ -10,7 +10,7 @@ $current_user = wp_get_current_user();
 $current_user_id = $current_user->ID;
 date_default_timezone_set('EST');
 ?>
-
+<link rel="stylesheet" href="/wp-content/plugins/fcc-dashboard/css/style.default.css" type="text/css" media="all" />
 <div class="fcc-dashboard mainwrapper">
     <div class="leftpanel">
         <div class="logopanel">

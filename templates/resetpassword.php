@@ -7,11 +7,11 @@ wp_head();
 if ( have_posts() ) : while ( have_posts() ) : the_post();
 endwhile; endif;
 ?>
+<link rel="stylesheet" href="/wp-content/plugins/fcc-dashboard/css/style.default.css" type="text/css" media="all" />
 <style>
 	form p, form label{color: #999;}
 	#pass-strength-result {display:none;}
 	.user-pass1-wrap {margin-bottom: 0px !important;}
-
 </style>
 <body class="loginbody">
 	<div class="loginwrapper">
