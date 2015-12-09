@@ -11,6 +11,7 @@ $current_user_id = $current_user->ID;
 date_default_timezone_set('EST');
 ?>
 <link rel="stylesheet" href="/wp-content/plugins/fcc-dashboard/css/style.default.css" type="text/css" media="all" />
+<div class="se-pre-con"></div>
 <div class="fcc-dashboard mainwrapper">
     <div class="leftpanel">
         <div class="logopanel">
@@ -92,3 +93,4 @@ date_default_timezone_set('EST');
     	<div class="footerright"><a href="http://www.pippindesign.com">Website Design & Development</a> by Pippin Design</div>
     </div>
 </div>
+<script>jQuery(function($){ $(window).load(function() {$(".se-pre-con").fadeOut(1000);}); });</script>
