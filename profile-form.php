@@ -70,6 +70,16 @@ Theme My Login will always look in your theme's directory first, before using th
 					</select>
 				</td>
 			</tr>
+			<?php $meta = get_user_meta( $current_user->ID); ?>
+			<tr class="tml-university-wrap">
+				<th><label for="university"><?php _e( 'University', 'theme-my-login' ); ?> <span class="description"><?php _e( '(required)', 'theme-my-login' ); ?></span></label></th>
+				<td><input type="text" name="university" id="university" value="<?php echo esc_attr( $meta['univerisity'][0] );?>" class="regular-text" /></td>
+			</tr>
+
+			<tr class="tml-title-wrap">
+				<th><label for="title"><?php _e( 'Title', 'theme-my-login' ); ?> <span class="description"><?php _e( '(required)', 'theme-my-login' ); ?></span></label></th>
+				<td><input type="text" name="title" id="title" value="<?php echo esc_attr( $meta['title'][0] );?>" class="regular-text" /></td>
+			</tr>
 		</table>
 
 		<table class="tml-form-table">
