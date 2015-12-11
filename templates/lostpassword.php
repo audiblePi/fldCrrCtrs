@@ -14,7 +14,11 @@ endwhile; endif;
 		<a href="<?php echo site_url(); ?>"><img class="login-logo" src="/wp-content/themes/FloridaCareerCenters/images/default-logo2.png"></a>
 		<h1 class="logintitle"><span class="iconfa-lock"></span> Lost Password <span class="subtitle">Create a new password.</span></h1>
 	        <div class="loginwrapperinner">
-	            <?php echo do_shortcode('[theme-my-login default_action="lostpassword" show_title=0]') ?>
+	            <?php 	
+           			echo do_shortcode('[theme-my-login default_action="lostpassword" show_title=0]') 
+					#echo do_shortcode('[wpmem_form password /]')
+            		#the_content();
+				?>
 	        </div>
 	    </div>
 	    <div class="loginshadow animate3 fadeInUp"></div>
