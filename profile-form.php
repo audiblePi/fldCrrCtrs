@@ -77,8 +77,8 @@ Theme My Login will always look in your theme's directory first, before using th
 			</tr>
 
 			<tr class="">
-				<th><label for="title"><?php _e( 'Title', 'theme-my-login' ); ?></label></th>
-				<td><input type="text" name="title" id="title" value="<?php echo esc_attr( $profileuser->title ); ?>" class="regular-text" /></td>
+				<th><label for="user_title"><?php _e( 'Title', 'theme-my-login' ); ?></label></th>
+				<td><input type="text" name="user_title" id="user_title" value="<?php echo esc_attr( $profileuser->user_title ); ?>" class="regular-text" /></td>
 			</tr>
 
 		</table>
